@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(229, 236, 242);
+  -webkit-user-select: none; /* Safari */ 
+  -moz-user-select: none; /* Firefox */ 
+  -ms-user-select: none; /* Internet Explorer/Edge */ 
+  user-select: none; 
+}
+
+.spinner-parent{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccccccbe;
+  z-index: 999;
+}
+
+.chat-notification {
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+@media only screen and (min-width: 600px) {
+.gap-4 {
+  gap: 7rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .chat-notification {
+   width: 6rem;
+  }
+}
