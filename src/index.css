@@ -20,6 +20,11 @@ body {
   user-select: none; 
 }
 
+.bg-home-color{
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/has-project-8c3e8.appspot.com/o/background%20img%2Ffreepik-export-20240504081710rUAy.jpeg?alt=media&token=e3d43146-e73b-4532-bce2-138bd44c3be8');
+  background-size: cover;
+}
+
 .spinner-parent{
   position: fixed;
   inset: 0;
