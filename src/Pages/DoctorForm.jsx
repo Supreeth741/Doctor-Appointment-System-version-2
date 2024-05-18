@@ -210,7 +210,7 @@ function DoctorForm() {
                     ]}
                   >
                   <select className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '>
-                      <option selected>Select Specialty</option>
+                      <option >Select Specialty</option>
                       <option value="cardiology">Cardiology</option>
                       <option value="dermatology">Dermatology</option>
                       <option value="neurology">Neurology</option>
@@ -252,7 +252,7 @@ function DoctorForm() {
                     ]}
                   >
                   <select className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '>
-                      <option selected>Select Qualification</option>
+                      <option >Select Qualification</option>
                       <option value="MBBS">MBBS</option>
                       <option value="MD">MD</option>
                       <option value="MS">MS</option>
@@ -324,10 +324,10 @@ function DoctorForm() {
                       "Saturday",
                       "Sunday",
                     ].map((day, index) => (
-                      <div className="flex">
+                      <div className="flex" key={day}>
                         <input
                           type="checkbox"
-                          key={index}
+                          
                           value={day}
                           className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 "
                           onChange={(e) => {
@@ -361,7 +361,7 @@ function DoctorForm() {
         )}
 
       {alreadyApplied && !alreadyApproved && (
-        <div className="flex m-4 item-center gap-2">
+        <div className="flex m-10 item-center gap-2">
           <h3 className="text-2xl">
             You have already applied for this doctor account , please wait to
             approve your request

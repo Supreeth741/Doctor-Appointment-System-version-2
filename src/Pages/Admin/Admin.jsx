@@ -7,6 +7,7 @@ import { GetUserById } from '../../apicalls/users';
 import { Tabs, message } from 'antd';
 import UserList from './UserList';
 import DoctorList from './DoctorList';
+import UserData from '../UserData';
 
 function Admin() {
 
@@ -46,6 +47,7 @@ function Admin() {
       <Tabs>
         <Tabs.TabPane tab="Users" key="1"><UserList /></Tabs.TabPane>
         <Tabs.TabPane tab="Doctors" key="2"> <DoctorList /> </Tabs.TabPane>
+        <Tabs.TabPane tab="Profile" key="3"> <UserData /> </Tabs.TabPane>
       </Tabs>
       </div>
       <Footer />
