@@ -26,7 +26,7 @@ Clone the project
 Change Directory
 
 ```bash
-  cd Doctor Appointment System
+  cd Doctor-Appointment-System-version-2
 ```
 
 Config Firebase
